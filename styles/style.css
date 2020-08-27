@@ -1,7 +1,93 @@
+body {
+	margin: 0px;
+}
+
+main {
+	text-align: center;
+	min-width: 1000px;
+	max-width: auto;
+}
+
 header {
-  position: float;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	min-width: 1000px;
+	padding: 10px 5px 10px 5px;
 }
 
 footer {
-  position: float;
+	background-color: hsl(216, 17%, 97%);
+}
+
+.button {
+	padding: 10px 10px 10px 10px;
+	margin: 0px;
+}
+
+#links {
+	display: flex;
+	flex-direction: column;
+}
+
+#left-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	min-width: 1000px;
+	padding: 2px auto 5px 2px;
+}
+
+#right-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	min-width: 1000px;
+	padding: 2px 5px 2px auto;
+}
+
+#language {
+	padding: 10px 5px 10px 5px;
+	margin: 0px;
+	border-color: hsl(216, 15%, 90%);
+	border-style: solid none solid none;
+	border-width: 1px;
+}
+
+@media (min-width: 1065px) {
+	#links {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	#left-links {
+		min-width: auto;
+	}
+	
+	#right-links {
+		min-width: auto;
+	}
+}
+
+button {
+	background-color: hsl(216, 17%, 97%);
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.suggestion {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.icon:hover {
+	text-decoration: none;
 }
