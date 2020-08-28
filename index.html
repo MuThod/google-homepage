@@ -4,25 +4,26 @@
   <meta charset="utf-8">
   <title>Google</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
   <header id="services">
-	<p class="button"><a href="">Gmail</a></p>
-	<p class="button"><a href="">Images</a></p>
-	<p class="button"><a href="" class="material-icons icon">apps</a></p>
-	<p class="button"><a href="">Connection</a></p>
+	<p class="button"><a class="services-button" href="">Gmail</a></p>
+	<p class="button"><a class="services-button" href="">Images</a></p>
+	<p class="button"><a href="" class="material-icons icon services-button">apps</a></p>
+	<p class="button"><a class="services-button" href="">Connection</a></p>
   </header>
   <main>
     <div>
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""/>
+      <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""/>
     </div>
     <div>
       <form action="">
-        <div>
-          <label for="search"><span class="material-icons">search</span></label>
+        <div id="search-bar">
+          <label for="search"><span class="material-icons search-icon">search</span></label>
           <input type="text" id="search" name="search">
-          <div class="material-icons"><a href="" class=icon>mic</a></div>
+          <div><a href="" class="material-icons search-icon">mic</a></div>
         </div>
         <button type="submit">Recherche Google</button>
         <button type="submit">J'ai de la chance</button>
@@ -38,16 +39,16 @@
     </div>
     <div id="links">
 		<div id="left-links">
-		  <p class="button"><a href="">Publicité</a></p>
-		  <p class="button"><a href="">Entreprise</a></p>
-		  <p class="button"><a href="">À propos</a></p>
-		  <p class="button"><a href="">Comment fonctionne la recherche Google ?</a></p>
+		  <p class="button"><a class="links-button" href="">Publicité</a></p>
+		  <p class="button"><a class="links-button" href="">Entreprise</a></p>
+		  <p class="button"><a class="links-button" href="">À propos</a></p>
+		  <p class="button"><a class="links-button" href="">Comment fonctionne la recherche Google ?</a></p>
 		</div>
 		<div id="right-links">
-		  <p class="button"><a href="">Info consommateurs</a></p>
-		  <p class="button"><a href="">Confidentialité</a></p>
-		  <p class="button"><a href="">Conditions</a></p>
-		  <p class="button"><a href="">Paramètres</a></p>
+		  <p class="button"><a class="links-button" href="">Info consommateurs</a></p>
+		  <p class="button"><a class="links-button" href="">Confidentialité</a></p>
+		  <p class="button"><a class="links-button" href="">Conditions</a></p>
+		  <p class="button"><a class="links-button" href="">Paramètres</a></p>
 		</div>
   </footer>
 </body>

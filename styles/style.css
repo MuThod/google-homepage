@@ -1,11 +1,15 @@
 body {
 	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 13px;
 }
 
 main {
 	text-align: center;
 	min-width: 1000px;
-	max-width: auto;
+	height: auto;
 }
 
 header {
@@ -14,20 +18,29 @@ header {
 	justify-content: flex-end;
 	min-width: 1000px;
 	padding: 10px 5px 10px 5px;
+	height: auto;
 }
 
 footer {
 	background-color: hsl(216, 17%, 97%);
+	color: hsl(216, 15%, 50%);
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	font-size: 14px;
 }
 
 .button {
-	padding: 10px 10px 10px 10px;
+	padding: 0px 5px;
 	margin: 0px;
 }
 
 #links {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
+	padding: 10px;
 }
 
 #left-links {
@@ -35,7 +48,7 @@ footer {
 	flex-direction: row;
 	justify-content: flex-start;
 	min-width: 1000px;
-	padding: 2px auto 5px 2px;
+	padding: 0px auto 0px 0px;
 }
 
 #right-links {
@@ -43,11 +56,11 @@ footer {
 	flex-direction: row;
 	justify-content: flex-end;
 	min-width: 1000px;
-	padding: 2px 5px 2px auto;
+	padding: 0px 0px 0px auto;
 }
 
 #language {
-	padding: 10px 5px 10px 5px;
+	padding: 10px 10px 10px 15px;
 	margin: 0px;
 	border-color: hsl(216, 15%, 90%);
 	border-style: solid none solid none;
@@ -70,18 +83,42 @@ footer {
 }
 
 button {
-	background-color: hsl(216, 17%, 97%);
-	padding: 5px;
+	background-color: hsl(216, 17%, 95%);
+	margin: 10px;
+	padding: 7px 18px;
 	border-radius: 5px;
-	box-shadow: none;
+	border-style: none;
+	color: hsl(216, 15%, 45%);
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 13px;
 }
 
 a {
 	text-decoration: none;
 }
 
+.services-button {
+	color: black;
+}
+
+.services-button:visited {
+	color: black;
+}
+
+.links-button {
+	color: hsl(216, 15%, 50%);
+}
+
+.links-button:visited {
+	color: hsl(216, 15%, 50%);
+}
+
 .suggestion {
 	text-decoration: underline;
+}
+
+.services-button:hover {
+	color: hsl(216, 15%, 35%);
 }
 
 a:hover {
@@ -89,5 +126,48 @@ a:hover {
 }
 
 .icon:hover {
+	text-decoration: none;
+}
+
+#logo {
+	margin: 40px 0px 50px 0px;
+}
+
+#search-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2px;
+	margin: 10px auto 20px auto;
+	border-width: 1px;
+	border-style: solid;
+	border-color: hsl(216, 15%, 90%);
+	border-radius: 30px;
+	width: 440px;
+	height: 40px;
+}
+
+#search-bar:hover {
+	box-shadow: 0.1em 0.1em 0.3em hsl(216, 15%, 80%), 0.05em 0.05em 0.1em hsl(216, 15%, 90%);
+}
+
+#search {
+	font-size: 1.5em;
+	width: 350px;
+	padding: 0px;
+    border-width: 0px;
+}
+
+#search:focus {
+	outline-style: none;
+}
+
+.search-icon {
+	margin: 4px 6px;
+    padding: 4px 4px 4px 4px;
+	color: hsl(216, 15%, 60%);
+}
+
+.search-icon:hover {
 	text-decoration: none;
 }
